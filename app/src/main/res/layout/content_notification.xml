@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <!--android:drawableRight="@drawable/ic_notifications_none_white_24dp"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Follow us on"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#3b5998"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_facebook_app_symbol"
+                        android:onClick="onClickfb"
+                        android:layout_weight="1"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/insta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:backgroundTint="#ffffff"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_instagram"
+                        android:onClick="onClickinsta"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/utube"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:backgroundTint="#d7143a"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_youtube_1"
+                        android:onClick="onClickyoutube"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/likdn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_weight="1"
+                        android:backgroundTint="#0077b7"
+                        android:onClick="onClicklinkedin"
+                        app:srcCompat="@drawable/ic_linkedin" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <!--android:drawableRight="@drawable/ic_notifications_none_white_24dp"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Contact us"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/afridi"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="Sponsorship and Association Queries "
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Shahid : +91 8555959443"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text=" "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/jagadeesh"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+
+                            android:layout_marginLeft="5dp"
+                            android:text="For Registration Queries"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Jagadeesh : +91 9052799427"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/coordinator"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="For Speaking Opportunities"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Karthik : +91 8309723356"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ganga"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="For any Event queries"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Ganga Sunil: +91 9182233710"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rambabu"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="For Accommodation Queries"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Ram babu : +91 7657091889"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nishanth"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="For Transportation Queries"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Nishant : +91 8790201012"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lucifer"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/devname"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="Mrudhul G : +91 8309593260"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text="more.."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <!--android:drawableRight="@drawable/ic_notifications_none_white_24dp"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:text="Additional contacts"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ambulance"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="Ambulance In case"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="12dp"
+                            android:text="+91 70087 29231"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text=" "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_width="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bov"
+                        android:layout_weight="3.5"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:layout_gravity="center_vertical">
+                        <TextView
+                            android:textColor="#262626"
+                            android:layout_marginLeft="5dp"
+                            android:text="BOV's-Inside campus Transportation"
+                            android:textSize="13sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <mehdi.sakout.fancybuttons.FancyButton
+                            xmlns:fancy="http://schemas.android.com/apk/res-auto"
+                            android:onClick="onClickcompbovs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="16dp"
+                            android:padding="10dp"
+                            fancy:fb_borderColor="#FFFFFF"
+                            fancy:fb_borderWidth="1dp"
+                            fancy:fb_defaultColor="@color/color3"
+                            fancy:fb_focusColor="@color/color1"
+                            fancy:fb_iconPosition="left"
+                            fancy:fb_radius="3dp"
+                            fancy:fb_text="Click For Details"
+                            fancy:fb_textColor="#FFFFFF"
+                            android:elevation="2dp"/>
+                        <!--<TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:drawablePadding="10dp"
+                            android:maxLines="2"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/color3"
+                            android:ellipsize="end"
+                            android:textSize="13dp"
+                            android:text=" "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />-->
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <!--android:drawableRight="@drawable/ic_notifications_none_white_24dp"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:text="Visit our website"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@drawable/ic_domain"
+                android:onClick="onClickwebsitee" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

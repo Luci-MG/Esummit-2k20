@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "828233046116",
+    "firebase_url": "https://esummit-41223.firebaseio.com",
+    "project_id": "esummit-41223",
+    "storage_bucket": "esummit-41223.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828233046116:android:55e085453edf021138e771",
+        "android_client_info": {
+          "package_name": "com.iitbbs.esummit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828233046116-84t5cqirgl8j14tfv8cghd1b6rta0kgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iitbbs.esummit",
+            "certificate_hash": "b9a45c695088dd3e73e4d67803570cdb44ec8d0a"
+          }
+        },
+        {
+          "client_id": "828233046116-9b7u37bu0bgs0iisug6d44lvqi1mdhns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4AA7APN_YEi7Ejh7nvr5LGiWtn8jpk_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828233046116-9b7u37bu0bgs0iisug6d44lvqi1mdhns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

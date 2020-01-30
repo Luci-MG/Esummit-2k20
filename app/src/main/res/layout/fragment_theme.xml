@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".theme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:drawablePadding="6dp"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Theme"
+            android:fontFamily="@font/open_sans"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6fff" />-->
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+
+
+        <TextView
+            android:textColor="#262626"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="'Shifting Paradigms: \n Pursuing purpose beyond profits'"
+            android:textSize="15sp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:text="Entrepreneurship offers a viable and proven pathway to economic growth and personal fulfillment. But, is it always about that? It's time and again proven that economic profits is not the only motive behind entrepreneurship, it's not just about the money-n-profit always. It is high time that we realize what does the future world actually needs. Is it just the profits we care about or do we even care to focus on huge necessity of improved education and healthcare facilities, innovative methodologies for energy production and utilization and other new emerging solutions/developments ? It's time to think beyond profits, look out for a change; it's time to think about the people, the planet and its resources ; it's time to take a step towards sustainable entrepreneurship. This theme is to bring out the entrepreneurial approaches which can be used to solve social and environmental problems that would make a positive contribution towards the development of the society, while thinking beyond profits. E-Summit'20 aims to embed the culture of entreprenuership in the young minds where they believe in pursuing purpose beyond profits. "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <androidx.legacy.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="12dp" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

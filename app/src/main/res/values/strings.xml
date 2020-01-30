@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ESummit</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_right_drawer">Right Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="comp1">E-Summit’20 IIT Bhubaneswar presents you with Enigma, the case challenge competition. This is the competition for those who have the ability to analyse and come up with a solution to a real-time problem innovatively.</string>
+    <string name="comp2">B-Plan (Business Plan) Competition is designed to encourage innovation and entrepreneurship among participants by engaging and providing them an opportunity to develop and pursue their business ideas. The Competition will reward business models and plans which are most innovative, complete and most likely to result in successful, high-growth ventures that would create new jobs. </string>
+    <string name="comp3">Do you believe your project/idea is innovative, market feasible and capable of disruption? Then here is the right opportunity to prove your mettle!! </string>
+    <string name="comp4">“A good ad should be like a good sermon: It must not only comfort the afflicted, it also must afflict the comfortable.”</string>
+    <string name="comp5">“A good design is all about making other designers feel like idiots because that idea wasn’t theirs” - Frank Chimero</string>
+    <string name="comp6">“Logos are graphic extension of the internal realities of a company” — Saul Bass</string>
+    <string name="comp7">“If a logo is the visual representation of a brand, a slogan or tagline is what truly brings it to life.”</string>
+    <string name="comp8">Are you a person with enormous business knowledge? Then, this is the competition for you. Outplay your competitors with your business insight.</string>
+    <string name="comp9">E-Summit\'20, IIT Bhubaneswar presents Stock Wars, A competition which brings out the bull and bear amongst the players, our shareholders. But there is no risk in speculation as we deal with virtual money. So, speculators, here is the opportunity in E-Summit\'20 to showcase your skills and get rewarded. </string>
+
+    <string name="url"></string>
+    <string name="aboutus">E-Summit is a three day event, started as an initiative of the Entrepreneurship Cell of IIT Bhubaneswar. The Summit seeks to facilitate interaction among industrialists, funding agencies, seasoned and upcoming entrepreneurs, academia and students of the participating institutes. E-Summit’20 will include a gamut of activities such as entrepreneurial guest lectures, workshops and panel discussions with experts, startup internship fair and investors drive. E-summit, as a culture of IIT Bhubaneswar, has proved its worth in depleting the Chasm that exists between Entrepreneurship and management. It is the stage for future Industry leaders and Entrepreneurs to exercise their skills.</string>
+    <string name="theme"> </string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="devname">&lt; Developer &gt;</string>
+    <string name="e_summit_20_iit_bhubaneswar_provides_a_one_stop_solution_to_all_start_ups_that_are_in_need_of_funding_mentoring_incubation_space_especially_for_early_stage_start_ups_by_bringing_investors_mentor_institutions_together_register_now_the_sooner_the_better_limited_number_of_startups"><![CDATA[E-Summit ‘20, IIT Bhubaneswar provides a one stop solution to all start-ups that are in need of funding, mentoring, Incubation space especially for early stage start-ups by bringing Investors, mentor & institutions together. Register now, the sooner the better. Limited number of Startups]]></string>
+</resources>

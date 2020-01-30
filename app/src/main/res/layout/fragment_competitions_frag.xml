@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context=".competitions_frag">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/voilet">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/advertisement"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="ADVERTORIAL - The AD making competition"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+                                android:onClick="onClickcomp4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/advertisement"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="ADVERTORIAL - The AD making competition"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/postermaking"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="KREO - The Poster Making competition"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+                                android:onClick="onClickcomp5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/postermaking"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="KREO - The Poster Making competition"
+                                        android:textSize="15sp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/logomakingg"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="INSIGNIA -The logo making competition"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickcomp6"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/logomakingg"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="INSIGNIA -The logo making competition"
+                                        android:textSize="15sp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/taglines"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="EPIGRAMMA - The slogan/tag-line making competition"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:onClick="onClickcomp7"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/taglines"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="EPIGRAMMA - The slogan/tag-line making competition"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="1"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/expo"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="INNOVATION EXPO"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+                                android:onClick="onClickcomp3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/expo"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="INNOVATION EXPO"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="3"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/bplann"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="B-PLAN"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                android:onClick="onClickcomp2"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/bplann"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="B-PLAN"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="3"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/enigma"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="ENIGMA - THE CASE CHALLENGE COMPETITION"
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                android:onClick="onClickcomp1"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/enigma"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="ENIGMA - THE CASE CHALLENGE COMPETITION"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/quiz"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:layout_marginLeft="16dp"
+                                android:text="BIZ QUIZ "
+                                android:textSize="13sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:onClick="onClickcomp8"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/quiz"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="BIZ QUIZ "
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="3"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp8"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                    android:id="@+id/cell_content_view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <androidx.cardview.widget.CardView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="8dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:src="@drawable/stocks"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <TextView
+                                android:textColor="#262626"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="16dp"
+                                android:text="STOCK WARS"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:drawablePadding="10dp"
+                                android:ellipsize="end"
+                                android:textSize="11dp"
+                                android:text="@string/comp9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                fancy:fb_defaultColor="@color/color3"
+                                android:onClick="onClickcomp9"
+                                fancy:fb_focusColor="@color/color1"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Rules and Details"
+                                fancy:fb_textColor="#FFFFFF"
+                                android:elevation="2dp"/>
+
+                            <mehdi.sakout.fancybuttons.FancyButton
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="16dp"
+                                android:elevation="2dp"
+                                android:layout_marginRight="16dp"
+                                android:padding="10dp"
+                                fancy:fb_borderColor="#FFFFFF"
+                                fancy:fb_borderWidth="1dp"
+                                android:onClick="onClickregister"
+                                fancy:fb_defaultColor="#FF0000"
+                                fancy:fb_focusColor="#FF1111"
+                                fancy:fb_iconPosition="left"
+                                fancy:fb_radius="3dp"
+                                fancy:fb_text="Register"
+                                fancy:fb_textColor="#FFFFFF" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/stocks"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:text="STOCK WARS"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="3"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="@string/comp9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+                <com.ramotion.foldingcell.FoldingCell
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/folding_cell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:layout_margin="5dp"
+                    android:clipToPadding="false"
+                    folding-cell:animationDuration="1000"
+                    folding-cell:backSideColor="@android:color/transparent"
+                    folding-cell:additionalFlipsCount="3"
+                    folding-cell:cameraHeight="30">
+                    ​<LinearLayout
+                        android:id="@+id/cell_content_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="center_vertical">
+
+                                <ImageView
+                                    android:src="@drawable/competition"
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp" />
+
+                                <TextView
+                                    android:textColor="#262626"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:text="IPL AUCTION"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/open_sans_semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:drawablePadding="10dp"
+                                    android:ellipsize="end"
+                                    android:textSize="11dp"
+                                    android:text="Welcome to the thrill of a live IPL Auction!! Put yourselves into the shoes of a bidder and build your dream fantasy IPL team that you always wanted to lift the coveted trophy."
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <mehdi.sakout.fancybuttons.FancyButton
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:padding="10dp"
+                                    fancy:fb_borderColor="#FFFFFF"
+                                    fancy:fb_borderWidth="1dp"
+                                    fancy:fb_defaultColor="@color/color3"
+                                    android:onClick="onClickcomp0"
+                                    fancy:fb_focusColor="@color/color1"
+                                    fancy:fb_iconPosition="left"
+                                    fancy:fb_radius="3dp"
+                                    fancy:fb_text="Rules and Details"
+                                    fancy:fb_textColor="#FFFFFF"
+                                    android:elevation="2dp"/>
+
+                                <mehdi.sakout.fancybuttons.FancyButton
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="16dp"
+                                    android:elevation="2dp"
+                                    android:layout_marginRight="16dp"
+                                    android:padding="10dp"
+                                    fancy:fb_borderColor="#FFFFFF"
+                                    fancy:fb_borderWidth="1dp"
+                                    android:onClick="onClickregister"
+                                    fancy:fb_defaultColor="#FF0000"
+                                    fancy:fb_focusColor="#FF1111"
+                                    fancy:fb_iconPosition="left"
+                                    fancy:fb_radius="3dp"
+                                    fancy:fb_text="Register"
+                                    fancy:fb_textColor="#FFFFFF" />
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                    <LinearLayout
+                        android:id="@+id/cell_title_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_margin="8dp">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:layout_width="0dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/competition"
+                                    android:layout_weight="3.5"/>
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5">
+                                    <TextView
+                                        android:textColor="#262626"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:text="IPL AUCTION"
+                                        android:fontFamily="@font/open_sans_semibold"
+                                        android:textSize="15sp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="3"
+                                        android:ellipsize="end"
+                                        android:textSize="12dp"
+                                        android:text="Welcome to the thrill of a live IPL Auction!! Put yourselves into the shoes of a bidder and build your dream fantasy IPL team that you always wanted to lift the coveted trophy."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                    <TextView
+                                        android:layout_marginTop="3dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginRight="16dp"
+                                        android:drawablePadding="10dp"
+                                        android:maxLines="2"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="@color/color3"
+                                        android:ellipsize="end"
+                                        android:textSize="13dp"
+                                        android:text="more.."
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    ​
+                </com.ramotion.foldingcell.FoldingCell>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
